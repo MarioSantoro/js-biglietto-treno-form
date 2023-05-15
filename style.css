@@ -1,0 +1,12 @@
+div.head{
+    background-color: cadetblue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0.44rem;
+}
+
+div.body{
+    padding: 0.44rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

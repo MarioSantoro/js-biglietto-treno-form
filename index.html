@@ -5,17 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trenis Mario</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="Age-label">
-        <label for="Age">Inserisci la tua Età</label>
-        <input type="text" name="Age" id="Age">
-    </div>
-    <div id="Km-label">
-        <label for="Km">Inserisci quanti kilometri devi percorrere</label>
-        <input type="text" name="Km" id="Km">
-    </div>
-    <div id="sumbit" style="cursor: pointer;">Calcolo costo</div>
+<body background="https://static.wikia.nocookie.net/wiki-del-trenino-thomas/images/c/cd/ThomasCGIpromo.jpg/revision/latest?cb=20160613120708&path-prefix=it" style="background-repeat: no-repeat; background-size: cover;">
+    <header class="text-center">
+        <h1>Benvenuti in Trenis Mario</h1>
+        <h2 class="my-3">Qui potrai calcolare quanto costa un biglietto in base ai kilometri che dovrai fare</h2>
+    </header>
+    <main class="container-fluid m-auto">
+        <form action="" class="w-50 m-auto my-3">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingAge" placeholder="name@example.com">
+                <label for="floatingAge">Inserisci la tua età</label>
+            </div>
+             <div class="form-floating">
+                <input type="text" class="form-control" id="floatingKm" placeholder="Password">
+                <label for="floatingKm">Inserisci quanti kilometri devi fare</label>
+            </div>
+            <div id="sumbit" class="btn btn-light mt-3" >Calcolo costo</div>
+        </form>
+        <div class="ticket w-75 m-auto">
+            <div class="head">
+                <p class="m-0 fw-bold text-white">Train Ticket</p>
+            </div>
+            <div class="body bg-white d-flex">
+                <div class="right">
+                    <h5 class="mb-2">Età</h5>
+                    <h6 id="Age-ticket" class="mb-2">???</h6>
+                    <h5 class="mb-2">Kilometri da percorrere</h5>
+                    <h6 id="km-ticket" class="mb-2">???</h6>
+                    <h5 class="mb-2">Costo bilgietto</h5>
+                    <h6 id="Price" class="mb-2">???</h6>
+                </div>
+                <div class="left ms-3">
+                    <h5>Sconto Applicato</h5>
+                    <h6 id="Sale">???</h6>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="Js/myscript.js"></script>
 </body>
 </html>
